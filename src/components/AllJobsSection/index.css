@@ -1,0 +1,235 @@
+.all-jobs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+}
+
+.all-jobs-responsive-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-jobs-responsive-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .user-filter-container {
+    width: 30%;
+  }
+  .jobs-container {
+    width: 66%;
+  }
+}
+
+.job-items-list-container {
+  padding-left: 0;
+}
+
+.retry-button-job {
+  border: none;
+  background-color: #6366f1;
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.jobs-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-loader-container {
+    width: 70%;
+  }
+}
+
+.jobs-error-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-error-view-container {
+    margin-top: 0px;
+    margin-left: 30px;
+    width: 70%;
+    padding-bottom: 0;
+  }
+}
+
+.jobs-failure-img {
+  width: 250px;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-failure-img {
+    width: 400px;
+    height: 350px;
+  }
+}
+
+.jobs-failure-heading-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-failure-heading-text {
+    font-size: 24px;
+  }
+}
+
+.jobs-failure-description {
+  text-align: center;
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  width: 90%;
+  max-width: 288px;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-failure-description {
+    font-size: 18px;
+    width: 60%;
+    max-width: 466px;
+  }
+}
+
+.search-container-mobile {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 380px;
+  min-width: 240px;
+  margin-top: 48px;
+  flex-shrink: 0;
+}
+
+.search-container-large {
+  display: none;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 15px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  width: 50%;
+  max-width: 380px;
+  min-width: 240px;
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-container-mobile {
+    display: none;
+  }
+  .search-container-large {
+    display: flex;
+  }
+}
+
+.hr-line {
+  width: 100%;
+  border-top: 1px solid #cbd5e1;
+}
+
+.no-jobs-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 64px;
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-view {
+    margin-left: 30px;
+    padding-bottom: 0;
+    margin-top: 0px;
+    height: 80vh;
+  }
+}
+
+.no-jobs-img {
+  width: 250px;
+  height: 180px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-img {
+    width: 459px;
+    height: 315px;
+  }
+}
+
+.no-jobs-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-heading {
+    margin-top: 32px;
+    font-size: 24px;
+  }
+}
+
+.no-jobs-description {
+  text-align: center;
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  width: 90%;
+  max-width: 288px;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-description {
+    margin-top: 12px;
+    font-size: 18px;
+    width: 60%;
+    max-width: 466px;
+  }
+}
